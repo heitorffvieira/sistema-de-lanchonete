@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- META TAG OG -->
+     <meta property="og:type" content="website">
+     <meta property="og:title" content="Dev Burguer">
+
+     <meta property="og:image" content="https://sistema-de-lanchonete-heitor.vercel.app/assets/Imagem%20do%20WhatsApp%20de%202024-11-14%20%C3%A0(s)%2015.14.34_93981de9.png">
+
+     <meta property="og:description" content="O melhor lanche da cidade">
+     <meta property="og:site_name" content="DevBurguer">
+     <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>DEV Burguer</title>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="assets/Imagem do WhatsApp de 2024-11-14 à(s) 15.14.34_93981de9.png" type="image/x-icon">
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+            src="assets/Imagem do WhatsApp de 2024-11-14 à(s) 15.14.34_93981de9.png" 
+            alt="Logo Lanchonete" 
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white text-center">
+                DEV Burguer
+            </h1>
+
+            <span class="text-white font-medium">Rua Luiz Carlos Prestes, Aracaju-SE</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium" id="horario-e-dia">FECHADO - 18:00 às 23:00</span>
+            </div>
+        </div>
+    </header>
+
+    <!--FIM HEADER-->
+
+    <!--MENU NAVEGÁVEL-->
+
+    <aside id="menu-navegavel">
+        <a href="#tradicionais">Tradicionais</a>
+        <a href="#especiais">Especiais</a>
+        <a href="#gourmet">Gourmet</a>
+        <a href="#batata">Batata Frita</a>
+        <a href="#tapioca">Tapioca</a>
+        <a href="#sucos">Sucos</a>
+        <a href="#refrigerante">Refrigerantes</a>
+        <a href="#bebida">Bebidas</a>
+    </aside>
+
+    <p id="aviso-menu">Arraste para o lado para conferir as opções do menu</p>
+
+    <!--FIM MENU NAVEGÁVEL-->
+
+    <span id="tradicionais"></span>
+
+    <h1 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+    </h1>
+
+    <!--INÍCIO MENU -->     
+    <div id="menu">
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Hambúrguer Tradicional 
+            </h2>
+        </div>
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" >
+        
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://brazzabnu.chefware.com.br/159/0/0/brazza-burguer-normal-1-carne.jpg" 
+                alt="Hambúrguer" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Hambúrguer</p>
+                    <p class="text-sm">Pão, hambúrguer, tomate, alface e milho verde
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Hambúrguer"
+                        data-price="7.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="./assets/hamburguerias-americanas.jpg" 
+                alt="Americano" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Americano</p>
+                    <p class="text-sm">Pão, ovo, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Americano"
+                        data-price="8.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://burgerx.com.br/assets/img/galeria/burgers/x-bacon.jpg" 
+                alt="X-Burguer" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Burguer</p>
+                    <p class="text-sm">Pão, hambúrguer, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 9.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Burguer"
+                        data-price="9.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://www.auau.com.br/image/cache/data/up_system/product-13696/HAMBURGUER-EGG-BACON-1000x1000.jpg" 
+                alt="Eggs Burguer" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">Eggs Burguer</p>
+                    <p class="text-sm">Pão, hambúrguer, ovo, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg" id="especiais">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Eggs Burguer"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+        
+        <!--FIM TRADICIONAIS-->
+        </main>
+
+        <!--HAMBÚRGUER ESPECIAL-->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Hambúrguer Especial 
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="./assets/Expresso-Delivery_aea5887b99777c1eb4cab3d753d03fde.png" 
+                alt="X-Frango" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Frango</p>
+                    <p class="text-sm">Pão, hambúrguer, frango, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Frango"
+                        data-price="12.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://pitstopfood.peddelivery.com.br/_core/_uploads//2023/03/0007220323ec2fedj7if.png" 
+                alt="X-Calabresa" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Calabresa</p>
+                    <p class="text-sm">Pão, hambúrguer, calabresa, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 12.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Calabresa"
+                        data-price="12.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://static.expressodelivery.com.br/imagens/produtos/135330/180/Expresso-Delivery_896131bb4ef444f880912072c76d1c69.png" 
+                alt="X-Coração" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Coração</p>
+                    <p class="text-sm">Pão, hambúrguer, coração, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Coração"
+                        data-price="15.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://ogimg.infoglobo.com.br/in/23479747-134-388/FT1086A/760/Burgers.ComeggFoto-Rodrigo-Azevedo.jpg" 
+                alt="X-Bacon" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Bacon</p>
+                    <p class="text-sm">Pão, hambúrguer, bacon, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Bacon"
+                        data-price="15.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+            
+            
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://detudo.app/assets/img/produto/16737618b72c6132746628bbc66685b3.jpg" 
+                alt="X-Filé" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div>
+                    <p class="font-bold">X-Filé</p>
+                    <p class="text-sm">Pão, hambúrguer, filé bovino, presunto, mussarela, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 17.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Filé"
+                        data-price="17.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://casadolanche.meucatalogofacil.com/_core/_uploads//2021/06/1705050621ee89e00e09.jpg" 
+                alt="X-Tudo" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">X-Tudo</p>
+                    <p class="text-sm">Pão, hambúrguer, ovo, filé, coração, calabresa, frango, bacon, tomate, alface e milho verde</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg" id="gourmet">R$ 28.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="X-Tudo"
+                        data-price="28.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+        
+        <!--FIM HAMBÚRGUER ESPECIAL-->
+        </div>
+
+        <!--GOURMET-->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Hambúrguer Gourmet 
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://hamburguer.zapdeliveries.com.br/_core/_uploads/165/2023/11/12220811232c4f0c50ag.jpg" 
+                alt="Hambúrguer Gourmet Tradicional" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Gourmet Tradicional</p>
+                    <p class="text-sm">Pão, batata, carne caseira, cheddar, barbecue, cebola caramelizada, tomate e alface</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 18.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Gourmet Tradicional"
+                        data-price="18.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2">
+                <img 
+                src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/images/YX6NC76FASupEsbNpIIYWqpfVhBcAXlZ46TnEcKb.jpg" 
+                alt="Hambúrguer Gourmet Especial" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Especial Burguer</p>
+                    <p class="text-sm">Pão, batata, carne caseira, farofa de bacon, cheddar e ovo</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 24.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Especial Burguer"
+                        data-price="24.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM    -->
+        
+        <!--FIM GOURMET-->
+        </div>
+
+        <!--BATATA FRITA-->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Batata Frita 
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./assets/batata-frita-1519671488107_v2_4x3.jpg" 
+                alt="Batata Frita" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Tradicional Pequena</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Batata Tradicional Pequena"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./assets/batata-frita-1519671488107_v2_4x3.jpg" 
+                alt="Batata Frita" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Tradicional Grande</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 20.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Batata Tradicional Grande"
+                        data-price="20.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://www.guiadasemana.com.br/contentFiles/image/opt_w1280h960/2017/03/FEA/54225_batata-frita-com-queijo-e-bacon.jpg" 
+                alt="Batata Frita Recheada" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Batata Recheada Pequena</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 15.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Batata Recheada Pequena"
+                        data-price="15.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://www.guiadasemana.com.br/contentFiles/image/opt_w1280h960/2017/03/FEA/54225_batata-frita-com-queijo-e-bacon.jpg" 
+                alt="Batata Frita Recheada" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Batata Recheada Grande</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg" id="tapioca">R$ 25.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Batata Recheada Grande"
+                        data-price="25.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+
+        <!--FIM BATATA FRITA  -->
+        </div>
+
+         <!--BATATA FRITA-->
+         <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Tapioca 
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx1HZT79uVPIHefTzpyhv34wZNlpOrlQ8UuA&s" 
+                alt="Tapioca de Frango e Mussarela" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Tapioca de Frango e Mussarela</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Tapioca de Frango e Mussarela"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+            <!--PRODUTO ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://www.mundopositivo.com.br/wp-content/uploads/2019/03/aprenda-a-preparar-receita-de-tapioca-com-nutella-e-morangos-1.jpg" 
+                alt="Tapioca de Nutella com Morango" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Tapioca de Nutella com Morango</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg" id="sucos">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Tapioca de Nutella com Morango"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PRODUTO ITEM-->
+
+        <!--FIM TAPIOCA  -->
+        </div>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Sucos
+            </h2>
+        </div>
+
+        <!--GRID SUCOS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://vitat.com.br/receitas/images/recipeshandler.jpg?id=65368&tipo=r&default=s&ims=fit-in/414x275/filters:quality(60)" 
+                alt="Suco de Ameixa" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Suco de Ameixa</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Suco de Ameixa"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://i.pinimg.com/474x/09/13/44/091344b095fafc6d95d133382a2fca9c.jpg" 
+                alt="Suco de Maracujá" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Suco de Maracujá</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Suco de Maracujá"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://maniadecozinhar.com.br/wp-content/uploads/2021/01/maniadecozinhar-2021-01-07T114237.384-380x380.png" 
+                alt="Suco de Mangaba" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Suco de Mangaba</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Suco de Mangaba"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:7.4551259:1629940993/Suco-de-graviola.jpg?f=default&$p$f=41865d7" 
+                alt="Suco de Graviola" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Suco de Graviola</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Suco de Graviola"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+        </div>
+        <!--FIM GRID SUCOS-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Refrigerante
+            </h2>
+        </div>
+
+         <!--GRID REFRIGERANTE-->
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://andinacocacola.vtexassets.com/arquivos/ids/157652/110255_COCA---CCO220ml.jpg?v=638404083624500000" 
+                alt="Coca-Cola lata" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Coca-Cola lata"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://nunesbebidas.com.br/wp-content/uploads/2021/05/Nunes-Bebidas-FANTA-LARANJA-LATA-350ML.jpg" 
+                alt="Fanta lata" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Fanta lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Fanta lata"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://carrefourbrfood.vtexassets.com/arquivos/ids/8969235/refrigerante-guarana-antarctica-350ml-1.jpg?v=637364778200030000" 
+                alt="Guaraná lata" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná lata</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Guaraná lata"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJMf7xK2JFng9_vHX4UMVkOHYNRBXgAt5Lgw&s" 
+                alt="Coca-Cola 1L" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Coca-Cola 1L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Coca-Cola 1L"
+                        data-price="7.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://images.tcdn.com.br/img/img_prod/959947/refrigerante_guarana_antarctica_pet_1_litro_2344_1_39bbdf8b0a53541df58bb6e70c38ae25.jpg" 
+                alt="Guaraná 1L" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná 1L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Guaraná 1L"
+                        data-price="7.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://hiperideal.vtexassets.com/arquivos/ids/197335/1503391.jpg?v=637829500864000000" 
+                alt="Fanta 1L" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Fanta 1L</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 7.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Fanta 1L"
+                        data-price="7.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+        </div>
+        <!--FIM GRID REFRIGERANTE-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">
+                Bebidas
+            </h2>
+        </div>
+
+         <!--GRID BEBIDAS-->
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://destro.fbitsstatic.net/img/p/cerveja-amstel-lata-350ml-83443/269998.jpg?w=500&h=500&v=no-change&qs=ignore" 
+                alt="Amstel" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Amstel</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 4.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Amstel"
+                        data-price="4.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://boa.vtexassets.com/arquivos/ids/540665/Bebida-Mista-Alcoolica-Gaseificada-Ice-Cabare-Garrafa-275ml.jpg?v=638478498105600000" 
+                alt="Cabaré Ice" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Cabaré Ice</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 8.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Cabaré Ice"
+                        data-price="8.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://choppbrahmaexpress.vtexassets.com/arquivos/ids/157953-800-auto?v=638230407011770000&width=800&height=auto&aspect=true" 
+                alt="Budweiser" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Budweiser</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Budweiser"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                src="https://img.sitemercado.com.br/produtos/04f7cc69a9c3a18abd34fd97fe72a9e11f535c68fc83baec19595934c12b9af7_hero_full.jpg" 
+                alt="Heineken" 
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold">Heineken</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 10.00</p>
+                        <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Heineken"
+                        data-price="10.00">
+                            <i class="fa fa-cart-plus text-white"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+        </div>
+        <!--FIM GRID BEBIDAS-->
+
+    </div>
+    <!--FIM MENU-->
+
+    <!-- MODAL CART -->
+    <div
+    class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden overflow-auto text-black"
+    id="cart-modal"
+    >
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px] max-h-[90vh] overflow-y-auto">
+            <h2 class="text-center font-bold text-2xl mb-4 pt-4">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold mb-6">Total: <span id="cart-total">0.00</span></p>
+
+            <p class="font-bold mb-2">Deseja acrescentar algo no hambúrguer?</p>
+
+            <p class="text-red-500 hidden mb-2" id="adicional-warn">Informe se deseja acrescentar algo no lanche!</p>
+
+            <div id="adicional-input" class="flex flex-col gap-4 mb-4">
+
+                <label class="flex items-center gap-2">
+                    <input
+                        type="radio"
+                        name="acrescentar"
+                        id="acrescentar-sim"
+                        class="form-radio text-right"
+                        onclick="acrescentarSim()"> Sim
+                </label>
+
+                <label class="flex items-center gap-2" id="label-nao-acrescentar">
+                    <input
+                        type="radio"
+                        name="acrescentar"
+                        id="acrescentar-nao"
+                        class="form-radio text-right"
+                        onclick="acrescentarNao()"> Não
+                </label>
+                
+            </div>
+
+            <div id="adicionais" class="hidden"
+            style="background-color: rgb(214, 214, 214);
+            padding: 10px;
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 7px;">
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Filé - R$ 8.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Filé Adicional"
+                    data-price="8.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Bacon - R$ 7.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Bacon Adicional"
+                    data-price="7.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Frango - R$ 7.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Frango Adicional"
+                    data-price="7.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Calabresa - R$ 7.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Calabresa Adicional"
+                    data-price="7.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Coração - R$ 7.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Coração Adicional"
+                    data-price="7.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Carne de Hambúrguer - R$ 5.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Carne de Hambúrguer Adicional"
+                    data-price="5.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Ovo - R$ 1.50</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Ovo Adicional"
+                    data-price="1.50">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Presunto - R$ 1.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Presunto Adicional"
+                    data-price="1.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Mussarela - R$ 2.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Mussarela Adicional"
+                    data-price="2.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+
+                <!--ADICIONAL ITEM-->
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">Molho Rose - R$ 1.00</p>
+                    <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="Molho Rose Adicional"
+                    data-price="1.00">
+                        <i class=" text-white">+</i>
+                    </button>
+                </div>
+                <!--FIM ADICIONAL ITEM-->
+            </div>
+
+            <div>
+                <p class="font-bold mt-3">Digite o seu nome:</p>
+                <input
+                    type="text"
+                    placeholder="Digite o seu nome completo"
+                    id="nameuser"
+                    class="w-full border-2 p-1 rounded my-1"
+                    required
+                >
+            </div>
+            <p class="text-red-500 hidden" id="nameuser-warn">Digite o seu nome completo!</p>
+
+            <!-- Opções de Retirada ou Delivery -->
+            <p class="font-bold mt-3">O pedido é para:</p>
+            <div id="delivery-selection" class="block gap-4 mb-4">
+
+                <label class="flex items-center gap-2">
+                    <input
+                        type="radio"
+                        name="delivery-method"
+                        value="delivery"
+                        id="delivery"
+                        class="form-radio text-right"> Delivery
+                </label>
+
+                <label class="flex items-center gap-2">
+                    <input
+                        type="radio"
+                        name="delivery-method"
+                        value="pickup"
+                        id="pickup"
+                        class="form-radio text-right"> Consumir/Retirar no local
+                </label>
+            </div>
+            <p class="text-red-500 hidden" id="retirada-warn">Selecione o método de retirada!</p>
+
+            <!-- Campos de Delivery -->
+            <div id="delivery-fields" class="hidden">
+                <p class="font-bold mt-3">Endereço de entrega:</p>
+                <input
+                    type="text"
+                    placeholder="Digite o seu endereço..."
+                    id="address"
+                    class="w-full border-2 p-1 rounded my-1"
+                >
+
+                <p class="text-red-500 hidden" id="address-warn">Digite o seu endereço completo!</p>
+
+                <label class="font-bold mt-3" for="bairros">Selecione o seu bairro</label>
+                <input
+                    list="bairro"
+                    id="bairros"
+                    class="w-full border-2 p-1 rounded my-1"
+                    placeholder="Selecione o seu bairro"
+                >
+
+                <datalist id="bairro">
+                    <option value="Farolândia">Farolândia (R$ 12.00)</option>
+                    <option value="Jardins">Jardins (R$ 10.00)</option>
+                    <option value="Santa Luzia">Santa Luzia (R$ 8.00)</option>
+                    <option value="Ponto Novo">Ponto Novo (R$ 5.00)</option>
+                </datalist>
+
+                <p class="text-red-500 hidden" id="bairro-warn">Por favor, selecione o seu bairro!</p>
+
+                <p class="font-bold mt-3">Ponto de referência:</p>
+                <input
+                    type="text"
+                    placeholder="Digite o ponto de referência do seu local"
+                    id="pontoref"
+                    class="w-full border-2 p-1 rounded my-1"
+                >
+            </div>
+
+            <p class="font-bold mt-3">Observações?</p>
+            <input
+                type="text"
+                placeholder="Detalhes no lanche ou outra coisa..."
+                id="observacoes"
+                class="w-full border-2 p-1 rounded my-1"
+            >
+
+            <p class="font-bold mt-3 mb-4">Forma de pagamento:</p>
+            <div id="payment-method" class="flex flex-col gap-4 mb-4">
+                <label class="flex items-center gap-2">
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cash"
+                        id="payment-cash"
+                        class="form-radio text-right"> Dinheiro
+                </label>
+
+                <div id="change-selection" class="hidden">
+                    <p class="font-bold mt-3">Precisa de troco?</p>
+                    <input
+                        type="text"
+                        placeholder="Se sim, quanto de troco?"
+                        id="cash-amount"
+                        class="w-full border-2 p-1 rounded my-1"
+                        required
+                    >
+                    <p class="text-red-500 hidden" id="troco-warn">Digite se precisará de troco e para quanto, caso precise</p>
+                </div>
+
+                <label class="flex items-center gap-2">
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="pix"
+                        id="payment-pix"
+                        class="form-radio text-right"> Pix
+                </label>
+
+                <p class="text-red-500 hidden" id="pagamento-warn">Selecione a forma de pagamento!</p>
+
+            </div>
+
+            <div id="pix-section" class="hidden">
+                <p class="font-bold mt-3">Chave pix: 79996422951<br>Heitor Fernando Feitosa Vieira</p>
+                <p class="font-bold mt-3">Envie o comprovante de pagamento no WhatsApp</p>
+            </div>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn" class="bg-gray-300 px-4 py-2 rounded">Fechar</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-2 rounded" type="submit">Finalizar pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT DE CONTROLE DE PAGAMENTO E DELIVERY -->
+    <script>
+    // Controle de métodos de pagamento
+    document.querySelectorAll('input[name="payment"]').forEach(input => {
+        input.addEventListener('change', function() {
+            const isCash = document.getElementById('payment-cash').checked;
+            const isPix = document.getElementById('payment-pix').checked;
+
+            if (isCash) {
+                document.getElementById('change-selection').classList.remove('hidden');
+                document.getElementById('pix-section').classList.add('hidden');
+                document.getElementById('pix-warn').classList.add('hidden');
+            } else if (isPix) {
+                document.getElementById('change-selection').classList.add('hidden');
+                document.getElementById('pix-section').classList.remove('hidden');
+            }
+        });
+    });
+
+    // Controle de método de entrega (Delivery ou Pickup)
+    document.querySelectorAll('input[name="delivery-method"]').forEach(input => {
+        input.addEventListener('change', function() {
+            const isDelivery = document.getElementById('delivery').checked;
+
+            if (isDelivery) {
+                document.getElementById('delivery-fields').classList.remove('hidden');
+                document.getElementById('address-warn').classList.add('hidden');
+            } else {
+                document.getElementById('delivery-fields').classList.add('hidden');
+                document.getElementById('address-warn').classList.add('hidden');
+            }
+        });
+    });
+    </script>
+
+    <!--BOTÃO FOOTER CARRINHO-->
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <button 
+    class="flex items-center gap-2 text-white font-bold"
+    id="cart-btn"
+    >
+        (<span id="cart-count">0</span>)
+        Veja seu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+    </footer>
+    <!--FIM FOOTER CARRINHO-->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="scrip.js"></script>
+    
+</body>
+</html>
