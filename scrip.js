@@ -29,8 +29,8 @@ const freteInfo = document.getElementById('frete-info');
 const fretePrecos = {
     Farolândia: 12.00,
     Jardins: 10.00,
-    SantaLuzia: 8.00,
-    PontoNovo: 5.00,
+    'Santa Luzia': 8.00,
+    'Ponto Novo': 5.00,
 };
 
 // Inicializa o carrinho
@@ -91,7 +91,7 @@ function addToCart(name, price) {
 
 // Função para calcular o valor do frete com base no bairro selecionado
 function calculateFrete() {
-    if (selectedBairro && fretePrecos[selectedBairro]) {
+    if (selectedBairro && fretePrecos.hasOwnProperty(selectedBairro)) {
         return fretePrecos[selectedBairro];
     }
     return 0;
@@ -122,7 +122,7 @@ function updateCartModal() {
         cartItemsContainer.appendChild(cartItemElement);
     });
 
-    // Exibe o bairro e o preço do frete abaixo dos itens
+    // Exibe o bairro e o preço do frete para qualquer bairro selecionado
     if (selectedBairro) {
         const frete = calculateFrete();
         const freteElement = document.createElement("div");
@@ -226,7 +226,7 @@ deliveryMethodRadios.forEach(input => {
 
 // Controle de bairro
 bairrosInput.addEventListener('change', function() {
-    selectedBairro = this.value;
+    selectedBairro = this.value.trim(); // Usa trim() para garantir que o valor do bairro esteja correto
     bairroWarn.classList.add('hidden');  
     updateCartModal(); 
 });
@@ -349,7 +349,7 @@ function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
     const minutos = data.getMinutes();
-    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 23 || (hora === 23 && minutos === 30));
+    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 23 || (hora === 23 && minutos <= 30));
 }
 
 const spanItem = document.getElementById("date-span");
