@@ -349,7 +349,7 @@ function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
     const minutos = data.getMinutes();
-    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 24 || (hora === 24 && minutos === 0));
+    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 23 || (hora === 23 && minutos === 30));
 }
 
 const spanItem = document.getElementById("date-span");
