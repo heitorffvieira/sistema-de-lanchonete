@@ -335,7 +335,7 @@ Total do pedido: R$${totalCompraComFrete.toFixed(2)}
 
 Observações do cliente, caso tenha: ${observacoesInput.value}
 
-Faça novos pedidos em: https://sistema-de-lanchonete-heitor.vercel.app/`);
+Faça novos pedidos em: https://sistema-de-lanchonete-heitorfv.vercel.app/`);
 
     const whatsappURL = `https://wa.me/5579996422951?text=${message}`;
     window.open(whatsappURL, "_blank");
@@ -349,7 +349,7 @@ function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
     const minutos = data.getMinutes();
-    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 23 || (hora === 23 && minutos <= 30));
+    return (hora > 8 || (hora === 8 && minutos >= 0)) && (hora < 23 || (hora === 23 && minutos <= 40));
 }
 
 const spanItem = document.getElementById("date-span");
