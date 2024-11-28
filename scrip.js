@@ -33,17 +33,14 @@ const fretePrecos = {
     'Ponto Novo': 5.00,
 };
 
-// Inicializa o carrinho
 let cart = [];
 let paymentMethod = '';
 let selectedBairro = ''; 
 
-// Abrir o modal do carrinho
 cartBtn.addEventListener("click", function() {
     cartModal.style.display = "flex";
 });
 
-// Fechar modal quando clicar fora
 cartModal.addEventListener("click", function(event){
     if(event.target === cartModal){
         cartModal.style.display = "none";
@@ -54,7 +51,6 @@ closeModalBtn.addEventListener("click", function(){
     cartModal.style.display = "none";
 });
 
-// Adiciona itens ao carrinho
 document.addEventListener("click", function(event) {
     let target = event.target;
     
@@ -70,7 +66,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// Função para adicionar no carrinho
 function addToCart(name, price) {
     console.log(`Adicionando ao carrinho: ${name} - R$${price}`); 
     
@@ -89,7 +84,6 @@ function addToCart(name, price) {
     updateCartModal();
 }
 
-// Função para calcular o valor do frete com base no bairro selecionado
 function calculateFrete() {
     if (selectedBairro && fretePrecos.hasOwnProperty(selectedBairro)) {
         return fretePrecos[selectedBairro];
@@ -97,7 +91,6 @@ function calculateFrete() {
     return 0;
 }
 
-// Atualiza o carrinho
 function updateCartModal() {
     cartItemsContainer.innerHTML = "";
     let total = 0;
@@ -122,7 +115,6 @@ function updateCartModal() {
         cartItemsContainer.appendChild(cartItemElement);
     });
 
-    // Exibe o bairro e o preço do frete para qualquer bairro selecionado
     if (selectedBairro) {
         const frete = calculateFrete();
         const freteElement = document.createElement("div");
@@ -143,7 +135,6 @@ function updateCartModal() {
     cartCounter.innerHTML = cart.length;
 }
 
-// Função para remover itens do carrinho
 cartItemsContainer.addEventListener("click", function(event) {
     if (event.target.classList.contains("remove-from-cart-btn")) {
         const name = event.target.getAttribute("data-name");
@@ -189,7 +180,6 @@ cashamountInput.addEventListener("input", function(event){
     }
 });
 
-// Função para exibir e ocultar as opções de adicionais
 const adicionalSimInput = document.getElementById('acrescentar-sim');
 const adicionalNaoInput = document.getElementById('acrescentar-nao');
 
@@ -264,7 +254,6 @@ checkoutBtn.addEventListener("click", function() {
 
     if (cart.length === 0) return;
 
-    // Valida adicionais
     if (!adicionalSimInput.checked && !adicionalNaoInput.checked) {
         adicionalWarn.classList.remove('hidden'); 
         adicionalWarn.classList.add('border-red-500');
@@ -344,7 +333,6 @@ Faça novos pedidos em: https://sistema-de-lanchonete-heitorfv.vercel.app/`);
     updateCartModal();
 });
 
-// Verifica se o restaurante está aberto
 function checkRestaurantOpen() {
     const data = new Date();
     const hora = data.getHours();
