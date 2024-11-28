@@ -1,5 +1,5 @@
-# 🚀 Projeto Sistema de Lanchonete com HTML, TailwindCSS, CSS e JavaScript.</h1>
-<p> 🍔 Esse é o projeto que fiz para hamburguerias que está sendo usado por lanchonetes da região onde eu moro.</p>
+# 🚀 Projeto Sistema de Lanchonete com HTML, TailwindCSS, CSS e JavaScript</h1>
+#### 🍔 Esse é o projeto que fiz para hamburguerias que está sendo usado por lanchonetes da região onde eu moro
 
 ### ⚙ PRINCIPAIS FUNCIONALIDADES: 
 - Cardápio Digital das opções da lanchonete 
