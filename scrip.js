@@ -233,6 +233,17 @@ paymentMethodRadios.forEach(input => {
     });
 });
 
+const valorWarn = document.getElementById('valor-warn');
+cashamountInput.addEventListener("input", function() {
+    const totalCompra = cart.reduce((acc, item) => acc + (item.price * item.quantity), 0);
+    const valorDigitado = parseFloat(cashamountInput.value) || 0; 
+
+    if (valorDigitado < totalCompra) {
+        valorWarn.classList.remove("hidden");
+    } else {
+        valorWarn.classList.add("hidden");
+    }
+});
 
 // Finalizar pedidos
 checkoutBtn.addEventListener("click", function() {
