@@ -14,3 +14,33 @@
 - Caso o cliente selecione dinheiro, irá aparecer um campo para ele inserir com quanto ele vai pagar
 - Desenvolvi mensagens de Warn quando o usuário tenta finalizar o pedido sem as informações necessárias e também um Alert personalizado quando o usuário tenta fazer algum pedido em um horário em que a lanchonete encontra-se fechada
 - Ao finalizar o pedido, o cliente será automaticamente redirecionado ao WhatsApp da lanchonete com uma mensagem pronta com todas as informações do pedido
+
+### 🤖 TECNOLOGIAS UTILIZADAS:
+
+<img 
+    style='padding-right: 10px' width='40px' 
+    title='HTML' 
+    alt='HTML5' 
+    align='left' 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+<img 
+    style='padding-right: 10px' width='40px' 
+    title='CSS' 
+    alt='CSS3' 
+    align='left' 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+<img 
+    style='padding-right: 10px' width='40px' 
+    title='JavaScript' 
+    alt='JavaScript' 
+    align='left' 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+<img 
+    style='padding-right: 10px' width='40px' 
+    title='Tailwind CSS' 
+    alt='Tailwind CSS' 
+    align='left' 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
