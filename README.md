@@ -19,7 +19,7 @@
 - Desenvolvi mensagens de Warn quando o usuário tenta finalizar o pedido sem as informações necessárias e também um Alert personalizado quando o usuário tenta fazer algum pedido em um horário em que a lanchonete encontra-se fechada
 - Ao finalizar o pedido, o cliente será automaticamente redirecionado ao WhatsApp da lanchonete com uma mensagem pronta com todas as informações do pedido
 
-### 🤖 TECNOLOGIAS UTILIZADAS:
+## 🤖 TECNOLOGIAS UTILIZADAS:
 
 <img 
     style='padding-right: 10px' width='40px' 
