@@ -3,7 +3,7 @@
 
 <br>
 
-### ⚙ PRINCIPAIS FUNCIONALIDADES: 
+### ⚙️ PRINCIPAIS FUNCIONALIDADES: 
 - Cardápio Digital das opções da lanchonete 
 - Menu navegável para acessar as opções de lanche com maior rapidez 
 - Botão para adicionar itens no carrinho
