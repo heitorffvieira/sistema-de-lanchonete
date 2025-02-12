@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- META TAG OG -->
      <meta property="og:type" content="website">
      <meta property="og:title" content="Dev Burguer">
 
@@ -30,7 +29,6 @@
 </head>
 <body>
 
-    <!--HEADER-->
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img 
@@ -51,10 +49,6 @@
         </div>
     </header>
 
-    <!--FIM HEADER-->
-
-    <!--MENU NAVEGÁVEL-->
-
     <aside id="menu-navegavel">
         <a href="#tradicionais">Tradicionais</a>
         <a href="#especiais">Especiais</a>
@@ -67,8 +61,6 @@
     </aside>
 
     <p id="aviso-menu">Arraste para o lado para conferir as opções do menu</p>
-
-    <!--FIM MENU NAVEGÁVEL-->
 
     <span id="tradicionais"></span>
 
@@ -189,10 +181,8 @@
             </div>
             <!--FIM PRODUTO ITEM    -->
         
-        <!--FIM TRADICIONAIS-->
         </main>
 
-        <!--HAMBÚRGUER ESPECIAL-->
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
                 Hambúrguer Especial 
@@ -360,7 +350,6 @@
         <!--FIM HAMBÚRGUER ESPECIAL-->
         </div>
 
-        <!--GOURMET-->
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
                 Hambúrguer Gourmet 
@@ -419,10 +408,8 @@
             </div>
             <!--FIM PRODUTO ITEM    -->
         
-        <!--FIM GOURMET-->
         </div>
 
-        <!--BATATA FRITA-->
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
                 Batata Frita 
@@ -527,11 +514,8 @@
             </div>
             <!--FIM PRODUTO ITEM-->
 
-
-        <!--FIM BATATA FRITA  -->
         </div>
 
-         <!--BATATA FRITA-->
          <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
                 Tapioca 
@@ -588,7 +572,6 @@
             </div>
             <!--FIM PRODUTO ITEM-->
 
-        <!--FIM TAPIOCA  -->
         </div>
 
         <div class="mx-auto max-w-7xl px-2 my-2">
@@ -597,7 +580,6 @@
             </h2>
         </div>
 
-        <!--GRID SUCOS-->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
             <!--BEBIDA ITEM-->
@@ -701,7 +683,6 @@
             <!--FIM BEBIDA ITEM-->
 
         </div>
-        <!--FIM GRID SUCOS-->
 
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
@@ -709,7 +690,6 @@
             </h2>
         </div>
 
-         <!--GRID REFRIGERANTE-->
          <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
             <!--BEBIDA ITEM-->
@@ -863,7 +843,6 @@
             <!--FIM BEBIDA ITEM-->
 
         </div>
-        <!--FIM GRID REFRIGERANTE-->
 
         <div class="mx-auto max-w-7xl px-2 my-2">
             <h2 class="font-bold text-3xl">
@@ -871,7 +850,6 @@
             </h2>
         </div>
 
-         <!--GRID BEBIDAS-->
          <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
 
             <!--BEBIDA ITEM-->
@@ -975,7 +953,6 @@
             <!--FIM BEBIDA ITEM-->
 
         </div>
-        <!--FIM GRID BEBIDAS-->
 
     </div>
     <!--FIM MENU-->
@@ -1157,7 +1134,6 @@
             </div>
             <p class="text-red-500 hidden" id="nameuser-warn">Digite o seu nome completo!</p>
 
-            <!-- Opções de Retirada ou Delivery -->
             <p class="font-bold mt-3">O pedido é para:</p>
             <div id="delivery-selection" class="block gap-4 mb-4">
 
@@ -1181,7 +1157,6 @@
             </div>
             <p class="text-red-500 hidden" id="retirada-warn">Selecione o método de retirada!</p>
 
-            <!-- Campos de Delivery -->
             <div id="delivery-fields" class="hidden">
                 <p class="font-bold mt-3">Endereço de entrega:</p>
                 <input
@@ -1276,9 +1251,7 @@
         </div>
     </div>
 
-    <!-- SCRIPT DE CONTROLE DE PAGAMENTO E DELIVERY -->
     <script>
-    // Controle de métodos de pagamento
     document.querySelectorAll('input[name="payment"]').forEach(input => {
         input.addEventListener('change', function() {
             const isCash = document.getElementById('payment-cash').checked;
@@ -1295,7 +1268,6 @@
         });
     });
 
-    // Controle de método de entrega (Delivery ou Pickup)
     document.querySelectorAll('input[name="delivery-method"]').forEach(input => {
         input.addEventListener('change', function() {
             const isDelivery = document.getElementById('delivery').checked;
@@ -1311,18 +1283,16 @@
     });
     </script>
 
-    <!--BOTÃO FOOTER CARRINHO-->
     <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
-    <button 
-    class="flex items-center gap-2 text-white font-bold"
-    id="cart-btn"
-    >
-        (<span id="cart-count">0</span>)
-        Veja seu carrinho
-        <i class="fa fa-cart-plus text-lg text-white"></i>
-    </button>
+        <button 
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Veja seu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
     </footer>
-    <!--FIM FOOTER CARRINHO-->
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="scrip.js"></script>

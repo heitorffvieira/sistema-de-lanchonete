@@ -197,7 +197,6 @@ adicionalNaoInput.addEventListener('change', function() {
     }
 });
 
-// Controle de método de entrega (Delivery ou Pickup)
 deliveryMethodRadios.forEach(input => {
     input.addEventListener('change', function() {
         const isDelivery = document.getElementById('delivery').checked;
@@ -214,14 +213,12 @@ deliveryMethodRadios.forEach(input => {
     });
 });
 
-// Controle de bairro
 bairrosInput.addEventListener('change', function() {
     selectedBairro = this.value.trim(); // Usa trim() para garantir que o valor do bairro esteja correto
     bairroWarn.classList.add('hidden');  
     updateCartModal(); 
 });
 
-// Controle de método de pagamento
 paymentMethodRadios.forEach(input => {
     input.addEventListener('change', function() {
         if (input.value === 'cash') {
@@ -245,7 +242,6 @@ cashamountInput.addEventListener("input", function() {
     }
 });
 
-// Finalizar pedidos
 checkoutBtn.addEventListener("click", function() {
     const isOpen = checkRestaurantOpen();
     if (!isOpen) {
@@ -322,20 +318,20 @@ checkoutBtn.addEventListener("click", function() {
     const paymentInfo = paymentMethod === 'cash' ? `Dinheiro, precisa de troco: ${cashamountInput.value}` : "Pix";
 
     const msgInicial = 'Olá, gostaria de fazer um pedido!\n\nPedido:\n\n'
-const message = encodeURIComponent(`${msgInicial} ${cartItems} 
+    const message = encodeURIComponent(`${msgInicial} ${cartItems} 
 
-Nome do cliente: ${nameuserInput.value}
+    Nome do cliente: ${nameuserInput.value}
 
-Método de retirada: ${deliveryMethod}
-${deliveryMethod === "Delivery" ? `Endereço: ${addressInput.value}\nBairro: ${bairrosInput.value}\nPonto de Referência: ${pontorefInput.value}\nFrete: R$ ${frete.toFixed(2)}` : ''}
+    Método de retirada: ${deliveryMethod}
+    ${deliveryMethod === "Delivery" ? `Endereço: ${addressInput.value}\nBairro: ${bairrosInput.value}\nPonto de Referência: ${pontorefInput.value}\nFrete: R$ ${frete.toFixed(2)}` : ''}
 
-Forma de pagamento: ${paymentInfo}
+    Forma de pagamento: ${paymentInfo}
 
-Total do pedido: R$${totalCompraComFrete.toFixed(2)}
+    Total do pedido: R$${totalCompraComFrete.toFixed(2)}
 
-Observações do cliente, caso tenha: ${observacoesInput.value}
+    Observações do cliente, caso tenha: ${observacoesInput.value}
 
-Faça novos pedidos em: https://sistema-de-lanchonete-heitorfv.vercel.app/`);
+    Faça novos pedidos em: https://sistema-de-lanchonete-heitorfv.vercel.app/`);
 
     const whatsappURL = `https://wa.me/5579996422951?text=${message}`;
     window.open(whatsappURL, "_blank");
@@ -353,7 +349,8 @@ function checkRestaurantOpen() {
 
 const spanItem = document.getElementById("date-span");
 const isOpen = checkRestaurantOpen();
-if(isOpen){
+
+if (isOpen){
     spanItem.classList.remove("bg-red-500");
     spanItem.classList.add("bg-green-600");
     horarioFuncionamento.innerHTML = 'ABERTO - 08:00 às 23:00'
