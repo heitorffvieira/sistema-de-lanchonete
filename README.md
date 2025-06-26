@@ -1,10 +1,6 @@
 # 🚀 Projeto Sistema de Lanchonete</h1>
 ### 🍔 Esse é o projeto que fiz para hamburguerias que está sendo usado por lanchonetes da região onde eu moro
 
-### 🌐 Acesse em: https://sistema-de-lanchonete-heitorfv.vercel.app/
-
-<br>
-
 ## ⚙️ PRINCIPAIS FUNCIONALIDADES: 
 - Cardápio Digital das opções da lanchonete 
 - Menu navegável para acessar as opções de lanche com maior rapidez 
@@ -18,6 +14,10 @@
 - Caso o cliente selecione dinheiro, irá aparecer um campo para ele inserir com quanto ele vai pagar
 - Desenvolvi mensagens de Warn quando o usuário tenta finalizar o pedido sem as informações necessárias e também um Alert personalizado quando o usuário tenta fazer algum pedido em um horário em que a lanchonete encontra-se fechada
 - Ao finalizar o pedido, o cliente será automaticamente redirecionado ao WhatsApp da lanchonete com uma mensagem pronta com todas as informações do pedido
+
+### 🌐 Acesse em: https://sistema-de-lanchonete-heitorfv.vercel.app/
+![image](https://github.com/user-attachments/assets/4fc38bc0-3392-4bc8-ab32-fb60971ceac7)
+
 
 ## 🤖 TECNOLOGIAS UTILIZADAS:
 
